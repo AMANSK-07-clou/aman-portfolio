@@ -1,733 +1,674 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Aman Shaikh | Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-
-    <header>
-        <nav class="navbar">
-
-            <div class="logo">
-                Aman<span>.</span>
-            </div>
-
-            <ul class="nav-links" id="navLinks">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#certificates">Certificates</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-            <button class="menu-btn" onclick="toggleMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-        </nav>
-    </header>
+<!-- BACKGROUND -->
+<div class="background">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="grid"></div>
+</div>
 
 
-    <!-- ================= HOME ================= -->
+<!-- NAVBAR -->
+<header class="navbar">
 
-    <section id="home" class="hero">
+    <a href="#home" class="logo">
+        AMAN<span>.</span>
+    </a>
 
-        <div class="hero-content">
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-            <p class="small-text">
-                Hello, I'm
-            </p>
+    <a href="#contact" class="nav-contact">
+        Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
 
-            <h1>
-                Aman <span>Shaikh</span>
-            </h1>
+    <button class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-            <h2>
-                B.Sc. IT Student | Python | SQL | Data Analytics
-            </h2>
-
-            <p class="hero-description">
-
-                I am a B.Sc. Information Technology student passionate
-                about software development, data analytics, artificial
-                intelligence, machine learning and cybersecurity.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
-
-                <a href="resume.pdf" download class="btn secondary">
-                    Download Resume
-                </a>
-
-            </div>
+</header>
 
 
-            <!-- SOCIAL LINKS -->
+<!-- HERO -->
+<main id="home">
 
-            <div class="social-links">
+<section class="hero">
 
-                <!-- GitHub -->
+    <div class="hero-content">
 
-                <a href="https://github.com/AMANSK-07-clou"
-                   target="_blank"
-                   title="GitHub">
-
-                    <i class="fa-brands fa-github"></i>
-
-                </a>
-
-
-                <!-- LinkedIn -->
-
-                <a href="https://www.linkedin.com/in/aman-shaikh007"
-                   target="_blank"
-                   title="LinkedIn">
-
-                    <i class="fa-brands fa-linkedin"></i>
-
-                </a>
-
-
-                <!-- Email -->
-
-                <a href="mailto:ammanshaikh0777@gmail.com"
-                   title="Email">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                </a>
-
-            </div>
-
+        <div class="hero-tag reveal">
+            <span></span>
+            AVAILABLE FOR OPPORTUNITIES
         </div>
 
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="section">
-
-        <h2 class="section-title">
-            About <span>Me</span>
-        </h2>
-
-
-        <div class="about-container">
-
-            <div class="about-image">
-
-                <img src="images/profile.jpeg"
-                     alt="Aman Shaikh">
-
-            </div>
-
-
-            <div class="about-content">
-
-                <h3>
-                    I'm Aman Shaikh
-                </h3>
-
-                <p>
-
-                    I am currently pursuing a Bachelor of Science
-                    in Information Technology.
-
-                </p>
-
-                <p>
-
-                    I am interested in software development,
-                    data analytics, artificial intelligence,
-                    machine learning and cybersecurity.
-
-                </p>
-
-                <p>
-
-                    I enjoy learning new technologies and creating
-                    practical projects that solve real-world problems.
-
-                </p>
-
-
-                <div class="about-info">
-
-                    <p>
-                        <strong>Education:</strong>
-                        B.Sc. Information Technology
-                    </p>
-
-                    <p>
-                        <strong>Expected Graduation:</strong>
-                        2027
-                    </p>
-
-                    <p>
-                        <strong>Languages:</strong>
-                        Hindi, English
-                    </p>
-
-                    <p>
-                        <strong>Interests:</strong>
-                        Coding, AI, Data Analytics & Cybersecurity
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills" class="section skills-section">
-
-        <h2 class="section-title">
-            My <span>Skills</span>
-        </h2>
-
-
-        <div class="skills-container">
-
-
-            <!-- Python -->
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-python"></i>
-
-                <h3>
-                    Python
-                </h3>
-
-                <p>
-                    Programming & Data Analysis
-                </p>
-
-            </div>
-
-
-            <!-- SQL -->
-
-            <div class="skill-card">
-
-                <i class="fa-solid fa-database"></i>
-
-                <h3>
-                    SQL
-                </h3>
-
-                <p>
-                    Database & Data Management
-                </p>
-
-            </div>
-
-
-            <!-- Power BI -->
-
-            <div class="skill-card">
-
-                <i class="fa-solid fa-chart-line"></i>
-
-                <h3>
-                    Power BI
-                </h3>
-
-                <p>
-                    Data Visualization & Analytics
-                </p>
-
-            </div>
-
-
-            <!-- AI ML -->
-
-            <div class="skill-card">
-
-                <i class="fa-solid fa-brain"></i>
-
-                <h3>
-                    AI & ML
-                </h3>
-
-                <p>
-                    Artificial Intelligence & Machine Learning
-                </p>
-
-            </div>
-
-
-            <!-- MySQL -->
-
-            <div class="skill-card">
-
-                <i class="fa-solid fa-server"></i>
-
-                <h3>
-                    MySQL
-                </h3>
-
-                <p>
-                    Database Management
-                </p>
-
-            </div>
-
-
-            <!-- Flask -->
-
-            <div class="skill-card">
-
-                <i class="fa-solid fa-code"></i>
-
-                <h3>
-                    Flask
-                </h3>
-
-                <p>
-                    Python Web Development
-                </p>
-
-            </div>
-
-
-            <!-- HTML CSS -->
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-html5"></i>
-
-                <h3>
-                    HTML & CSS
-                </h3>
-
-                <p>
-                    Web Development
-                </p>
-
-            </div>
-
-
-            <!-- JavaScript -->
-
-            <div class="skill-card">
-
-                <i class="fa-brands fa-js"></i>
-
-                <h3>
-                    JavaScript
-                </h3>
-
-                <p>
-                    Interactive Web Applications
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section">
-
-        <h2 class="section-title">
-            My <span>Projects</span>
-        </h2>
-
-
-        <div class="projects-container">
-
-
-            <!-- PROJECT 1 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-
-                    <i class="fa-solid fa-calendar-check"></i>
-
-                </div>
-
-
-                <h3>
-                    Smart Leave & Attendance Management System
-                </h3>
-
-
-                <p>
-
-                    A web-based student leave and attendance
-                    management system developed using Flask
-                    and MySQL with role-based approval workflows.
-
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Python</span>
-                    <span>Flask</span>
-                    <span>MySQL</span>
-
-                </div>
-
-
-                <a href="https://github.com/AMANSK-07-clou/SmartLeaveAttendanceSystem"
-                   target="_blank"
-                   class="project-link">
-
-                    View on GitHub
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-
-                    <i class="fa-solid fa-shield-halved"></i>
-
-                </div>
-
-
-                <h3>
-                    Cyber Security Escape Room
-                </h3>
-
-
-                <p>
-
-                    An interactive cybersecurity learning project
-                    designed to teach security concepts through
-                    challenges and puzzles.
-
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Cybersecurity</span>
-                    <span>HTML</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <a href="https://github.com/AMANSK-07-clou"
-                   target="_blank"
-                   class="project-link">
-
-                    View on GitHub
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 3 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-
-                    <i class="fa-solid fa-chart-simple"></i>
-
-                </div>
-
-
-                <h3>
-                    Data Analytics Project
-                </h3>
-
-
-                <p>
-
-                    Data analysis and visualization project using
-                    Python, SQL and Power BI to generate useful
-                    insights from datasets.
-
-                </p>
-
-
-                <div class="tags">
-
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>Power BI</span>
-
-                </div>
-
-
-                <a href="https://github.com/AMANSK-07-clou"
-                   target="_blank"
-                   class="project-link">
-
-                    GitHub
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CERTIFICATES ================= -->
-
-    <section id="certificates" class="section certificates-section">
-
-        <h2 class="section-title">
-            My <span>Certificates</span>
-        </h2>
-
-
-        <div class="certificate-container">
-
-
-            <!-- Python -->
-
-            <div class="certificate-card">
-
-                <i class="fa-brands fa-python"></i>
-
-                <h3>
-                    Python Certification
-                </h3>
-
-                <p>
-                    Python Programming
-                </p>
-
-                <a href="#"
-                   class="certificate-btn">
-
-                    View Certificate
-
-                </a>
-
-            </div>
-
-
-            <!-- AI -->
-
-            <div class="certificate-card">
-
-                <i class="fa-solid fa-robot"></i>
-
-                <h3>
-                    AI Master
-                </h3>
-
-                <p>
-                    Artificial Intelligence
-                </p>
-
-                <a href="#"
-                   class="certificate-btn">
-
-                    View Certificate
-
-                </a>
-
-            </div>
-
-
-            <!-- Data Science -->
-
-            <div class="certificate-card">
-
-                <i class="fa-solid fa-chart-pie"></i>
-
-                <h3>
-                    Data Science
-                </h3>
-
-                <p>
-                    Data Science & Analytics
-                </p>
-
-                <a href="#"
-                   class="certificate-btn">
-
-                    View Certificate
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="section contact-section">
-
-        <h2 class="section-title">
-            Contact <span>Me</span>
-        </h2>
-
-
-        <p class="contact-text">
-
-            Interested in working together or have an opportunity?
-            Feel free to contact me.
-
+        <p class="small-title reveal">
+            HELLO, I'M
         </p>
 
+        <h1 class="hero-title reveal">
+            AMAN
+            <br>
+            <span>SHAIKH</span>
+        </h1>
 
-        <div class="contact-container">
+        <div class="hero-line reveal"></div>
+
+        <p class="hero-description reveal">
+            B.Sc. IT Student
+            <span>·</span>
+            Python
+            <span>·</span>
+            SQL
+            <span>·</span>
+            Data Analytics
+        </p>
+
+        <p class="hero-text reveal">
+            I build modern digital experiences and practical
+            technology solutions with a focus on development,
+            data and AI.
+        </p>
+
+        <div class="hero-buttons reveal">
+
+            <a href="#projects" class="primary-btn">
+                View My Work
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+            <a href="resume.pdf" download class="secondary-btn">
+                Resume
+                <i class="fa-solid fa-download"></i>
+            </a>
+
+        </div>
+
+    </div>
 
 
-            <!-- EMAIL -->
+    <!-- HERO VISUAL -->
+    <div class="hero-visual reveal">
 
-            <a href="mailto:ammanshaikh0777@gmail.com"
-               class="contact-card">
+        <div class="visual-ring ring-1"></div>
+        <div class="visual-ring ring-2"></div>
+        <div class="visual-ring ring-3"></div>
 
-                <i class="fa-solid fa-envelope"></i>
+        <div class="profile-card">
+
+            <div class="card-top">
+                <span>PORTFOLIO / 2026</span>
+                <span>01</span>
+            </div>
+
+            <div class="profile-image">
+                <img src="images/profile.jpeg" alt="Aman Shaikh">
+            </div>
+
+            <div class="card-bottom">
+                <span>AMAN SHAIKH</span>
+                <span>DEVELOPER</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MARQUEE -->
+<section class="marquee">
+
+    <div class="marquee-track">
+
+        <span>PYTHON</span>
+        <i>✦</i>
+
+        <span>DATA ANALYTICS</span>
+        <i>✦</i>
+
+        <span>AI / ML</span>
+        <i>✦</i>
+
+        <span>SQL</span>
+        <i>✦</i>
+
+        <span>WEB DEVELOPMENT</span>
+        <i>✦</i>
+
+        <span>PYTHON</span>
+        <i>✦</i>
+
+        <span>DATA ANALYTICS</span>
+        <i>✦</i>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+
+    <div class="section-number">
+        01
+    </div>
+
+    <div class="section-heading">
+        <p>ABOUT ME</p>
+        <h2>
+            Building with
+            <span>curiosity.</span>
+        </h2>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-text">
+            <p>
+                I'm Aman Shaikh, a B.Sc. Information Technology student
+                passionate about software development, data analytics,
+                artificial intelligence and cybersecurity.
+            </p>
+
+            <p>
+                I enjoy turning ideas into useful digital products and
+                continuously improving my technical skills through
+                real-world projects.
+            </p>
+
+            <a href="#contact" class="text-link">
+                More about me
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="about-stats">
+
+            <div class="stat">
+                <strong>2027</strong>
+                <span>Expected Graduation</span>
+            </div>
+
+            <div class="stat">
+                <strong>08+</strong>
+                <span>Technical Skills</span>
+            </div>
+
+            <div class="stat">
+                <strong>03</strong>
+                <span>Featured Projects</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section class="section skills" id="skills">
+
+    <div class="section-number">
+        02
+    </div>
+
+    <div class="section-heading">
+        <p>EXPERTISE</p>
+        <h2>
+            Tools I use to
+            <span>create.</span>
+        </h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <span>01</span>
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+            <p>Programming & automation</p>
+        </div>
+
+        <div class="skill-card">
+            <span>02</span>
+            <i class="fa-solid fa-database"></i>
+            <h3>SQL</h3>
+            <p>Database & data handling</p>
+        </div>
+
+        <div class="skill-card">
+            <span>03</span>
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Power BI</h3>
+            <p>Data visualization</p>
+        </div>
+
+        <div class="skill-card">
+            <span>04</span>
+            <i class="fa-solid fa-brain"></i>
+            <h3>AI / ML</h3>
+            <p>Intelligent solutions</p>
+        </div>
+
+        <div class="skill-card">
+            <span>05</span>
+            <i class="fa-solid fa-server"></i>
+            <h3>MySQL</h3>
+            <p>Relational databases</p>
+        </div>
+
+        <div class="skill-card">
+            <span>06</span>
+            <i class="fa-solid fa-code"></i>
+            <h3>Flask</h3>
+            <p>Python web development</p>
+        </div>
+
+        <div class="skill-card">
+            <span>07</span>
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML / CSS</h3>
+            <p>Modern interfaces</p>
+        </div>
+
+        <div class="skill-card">
+            <span>08</span>
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Interactive experiences</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+
+    <div class="section-number">
+        03
+    </div>
+
+    <div class="section-heading">
+        <p>SELECTED WORK</p>
+
+        <h2>
+            Things I've
+            <span>built.</span>
+        </h2>
+    </div>
+
+
+    <div class="project-list">
+
+
+        <!-- PROJECT 01 -->
+        <article class="project">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div class="project-info">
+
+                <p class="project-type">
+                    WEB APPLICATION
+                </p>
 
                 <h3>
-                    Email
+                    Smart Leave &
+                    <br>
+                    Attendance System
                 </h3>
 
                 <p>
-                    ammanshaikh0777@gmail.com
+                    A Flask and MySQL based role-driven attendance
+                    management platform with approval workflows.
                 </p>
 
-            </a>
+                <div class="project-tech">
+                    <span>FLASK</span>
+                    <span>MYSQL</span>
+                    <span>PYTHON</span>
+                </div>
+
+                <a href="https://github.com/AMANSK-07-clou"
+                   target="_blank"
+                   class="project-link">
+
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
 
 
-            <!-- LINKEDIN -->
+            <div class="project-visual">
+
+                <div class="browser">
+
+                    <div class="browser-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="browser-content">
+                        <div class="fake-sidebar"></div>
+
+                        <div class="fake-dashboard">
+
+                            <div class="fake-header"></div>
+
+                            <div class="fake-cards">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div class="fake-chart"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 02 -->
+        <article class="project reverse">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-info">
+
+                <p class="project-type">
+                    CYBERSECURITY
+                </p>
+
+                <h3>
+                    Cyber Security
+                    <br>
+                    Escape Room
+                </h3>
+
+                <p>
+                    An interactive cybersecurity learning experience
+                    designed around challenges and problem solving.
+                </p>
+
+                <div class="project-tech">
+                    <span>SECURITY</span>
+                    <span>WEB</span>
+                    <span>LOGIC</span>
+                </div>
+
+                <a href="https://github.com/AMANSK-07-clou"
+                   target="_blank"
+                   class="project-link">
+
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="terminal">
+
+                    <div class="terminal-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>$ initializing_security_lab...</p>
+                        <p class="cyan">ACCESS GRANTED</p>
+                        <p>$ scanning vulnerabilities...</p>
+                        <p>$ firewall.status = active</p>
+                        <p class="muted">system ready_</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 03 -->
+        <article class="project">
+
+            <div class="project-number">
+                03
+            </div>
+
+            <div class="project-info">
+
+                <p class="project-type">
+                    DATA ANALYTICS
+                </p>
+
+                <h3>
+                    Data Analytics
+                    <br>
+                    Dashboard
+                </h3>
+
+                <p>
+                    Data analysis workflow using Python and SQL,
+                    transformed into interactive Power BI insights.
+                </p>
+
+                <div class="project-tech">
+                    <span>PYTHON</span>
+                    <span>SQL</span>
+                    <span>POWER BI</span>
+                </div>
+
+                <a href="https://github.com/AMANSK-07-clou"
+                   target="_blank"
+                   class="project-link">
+
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="project-visual">
+
+                <div class="analytics">
+
+                    <div class="analytics-header">
+                        <span>ANALYTICS</span>
+                        <span>2026</span>
+                    </div>
+
+                    <div class="bars">
+
+                        <div style="height:35%"></div>
+                        <div style="height:55%"></div>
+                        <div style="height:42%"></div>
+                        <div style="height:70%"></div>
+                        <div style="height:62%"></div>
+                        <div style="height:90%"></div>
+                        <div style="height:78%"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATES -->
+<section class="section certificates" id="certificates">
+
+    <div class="section-number">
+        04
+    </div>
+
+    <div class="section-heading">
+        <p>CREDENTIALS</p>
+
+        <h2>
+            Learning never
+            <span>stops.</span>
+        </h2>
+    </div>
+
+    <div class="certificate-grid">
+
+        <div class="certificate">
+            <span>01</span>
+            <i class="fa-brands fa-python"></i>
+            <h3>Python Certification</h3>
+            <p>Programming fundamentals</p>
+        </div>
+
+        <div class="certificate">
+            <span>02</span>
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI Master</h3>
+            <p>Artificial intelligence</p>
+        </div>
+
+        <div class="certificate">
+            <span>03</span>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h3>Data Science</h3>
+            <p>Data & analytics</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-inner">
+
+        <p class="contact-label">
+            05 / CONTACT
+        </p>
+
+        <h2>
+            Let's build
+            <span>something.</span>
+        </h2>
+
+        <p>
+            Have an idea, opportunity or project?
+            Let's connect.
+        </p>
+
+        <a href="mailto:ammanshaikh0777@gmail.com"
+           class="email-link">
+
+            ammanshaikh0777@gmail.com
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+
+        <div class="social-links">
 
             <a href="https://www.linkedin.com/in/aman-shaikh007"
-               target="_blank"
-               class="contact-card">
+               target="_blank">
 
-                <i class="fa-brands fa-linkedin"></i>
-
-                <h3>
-                    LinkedIn
-                </h3>
-
-                <p>
-                    Connect with me
-                </p>
+                LinkedIn
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
             </a>
 
-
-            <!-- GITHUB -->
-
             <a href="https://github.com/AMANSK-07-clou"
-               target="_blank"
-               class="contact-card">
+               target="_blank">
 
-                <i class="fa-brands fa-github"></i>
-
-                <h3>
-                    GitHub
-                </h3>
-
-                <p>
-                    View my repositories
-                </p>
+                GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
             </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
+
+</main>
 
 
-    <!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
+<footer>
 
-    <footer>
+    <div>
+        © 2026 AMAN SHAIKH
+    </div>
 
-        <p>
-            © 2026 Aman Shaikh. All Rights Reserved.
-        </p>
+    <div>
+        DESIGNED & BUILT WITH CODE
+    </div>
 
-        <p>
-            Built with HTML, CSS & JavaScript
-        </p>
-
-    </footer>
+</footer>
 
 
-    <!-- JAVASCRIPT -->
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
-```
